@@ -1,0 +1,19 @@
+version: '3'
+services:
+  react-frontend:
+    build:
+      context: . #specify the build context as current directory
+      dockerfile: Dockerfile.dev # mention the custom docker file name
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - .:/app
+  react-test:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    command: ["npm", "run", "test"]
