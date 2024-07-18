@@ -15,7 +15,7 @@ variables:
   containerRegistry: 'arazurecontainerregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
-  azureSubscription: 'Visual Studio Professional Subscription'
+  azureSubscription: 'Visual Studio Professional Subscription (29b0c234-a16e-4f8a-943a-431fd240459a)'
   appName: 'ar-dockerandkubernetes'
 
   # Agent VM image name
