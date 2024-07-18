@@ -6,9 +6,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>hello world!!!</p>
-        <p>again hi there</p>
-        <p>added yml file - committed</p>
+        <p>Hii There!!! Welcome Docker and Kubernetes session</p>
         <a
           className='App-link'
           href='https://reactjs.org'
